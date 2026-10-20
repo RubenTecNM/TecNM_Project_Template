@@ -16,7 +16,7 @@ public sealed class AuthController(AuthService authService) : ControllerBase
     {
         if (request is null
             || string.IsNullOrWhiteSpace(request.Username)
-            || string.IsNullOrEmpty(request.Password))
+            || string.IsNullOrWhiteSpace(request.Password))
         {
             return BadRequest();
         }
